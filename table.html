@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <div id='table'>
+      
+    </div>
+</body>
+</html>
+<script src="./index.js">
+</script>
+<script>
+  let id = document.getElementById('table');
+  let tableTitle = ['你好',"大傻逼","二愣子"];
+  let tableTd = ['hello','shadiao','erlengzi'];
+  let table = [
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+    {hello:'你好',shadiao:'我不是傻屌',erlengzi:'你才是'},
+  ];
+  new tableList(id,tableTitle,tableTd,table,{
+    border:false,
+    width:300,
+    align:'center',
+    stripe:true,
+  });
+</script>
